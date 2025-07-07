@@ -2,9 +2,50 @@ Autonomous System Planning and Control for Mobile Robot Navigation
 This ROS-based project implements a complete autonomous navigation system for a TurtleBot3 robot, integrating global path planning, local waypoint following, and obstacle avoidance using potential fields.
 
 📁 Repository Structure
+├── Autonomous_systems.pdf
+├── CMakeLists.txt
+├── launch
+│   ├── csb.launch
+│   ├── map1.launch
+│   ├── map_world.launch
+│   └── office.launch
+├── map1.sdf
+├── materials
+│   ├── scripts
+│   │   └── autonomous_lane.material
+│   └── textures
+│       └── autonomous sys.png
+├── maze
+├── models
+│   └── lane_path
+│       ├── materials
+│       │   ├── scripts
+│       │   │   └── Lane.material
+│       │   └── textures
+│       │       └── lane.jpeg
+│       ├── meshes
+│       ├── model.config
+│       └── model.sdf
+├── my_map.sdf
+├── my_robot_planner
+│   ├── CMakeLists.txt
+│   ├── ~p
+│   ├── package.xml
+│   ├── scripts
+│   │   ├── global_planner.py
+│   │   ├── kinematic_controller.py
+│   │   ├── navigator.py
+│   │   ├── potential_fields.py
+│   │   └── __pycache__
+│   │       ├── global_planner.cpython-38.pyc
+│   │       ├── kinematic_controller.cpython-38.pyc
+│   │       └── potential_fields.cpython-38.pyc
+│   └── src
+├── package.xml
+├── pranav.gitignore
+├── pranav.mp4
+└── README.md
 
-
-<pre> ```markdown . ├── Autonomous_systems.pdf ├── CMakeLists.txt ├── launch/ │ ├── csb.launch │ ├── map1.launch │ ├── map_world.launch │ └── office.launch ├── map1.sdf ├── materials/ │ ├── scripts/ │ │ └── autonomous_lane.material │ └── textures/ │ └── autonomous sys.png ├── maze/ ├── models/ │ └── lane_path/ │ ├── materials/ │ │ ├── scripts/ │ │ │ └── Lane.material │ │ └── textures/ │ │ └── lane.jpeg │ ├── meshes/ │ ├── model.config │ └── model.sdf ├── my_map.sdf ├── my_robot_planner/ │ ├── CMakeLists.txt │ ├── package.xml │ ├── scripts/ │ │ ├── global_planner.py │ │ ├── kinematic_controller.py │ │ ├── navigator.py │ │ ├── potential_fields.py │ │ └── __pycache__/ │ │ ├── global_planner.cpython-38.pyc │ │ ├── kinematic_controller.cpython-38.pyc │ │ └── potential_fields.cpython-38.pyc │ └── src/ ├── package.xml ├── pranav.gitignore ├── pranav.mp4 └── README.md ``` </pre>
 
 
 

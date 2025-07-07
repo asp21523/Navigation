@@ -1,0 +1,14 @@
+material autonomous_lane
+{
+    technique
+    {
+        pass
+        {
+            texture_unit
+            {
+                texture autonomous_sys.png
+            }
+        }
+    }
+}
+

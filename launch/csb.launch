@@ -1,0 +1,18 @@
+<launch>
+  <arg name="sdf_file" default="$(find asgn)/csb.sdf"/>
+
+  <!-- Launch Gazebo with custom world -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(arg sdf_file)"/>
+    <arg name="paused" value="false"/>
+    <arg name="use_sim_time" value="true"/>
+    <arg name="gui" value="true"/>
+    <arg name="headless" value="false"/>
+    <arg name="debug" value="false"/>
+  </include>
+
+  <!-- Spawn the lane_path model -->
+  <node name="spawn_lane" pkg="gazebo_ros" type="spawn_model" output="screen"
+        args="-file $(find asgn)/models/lane_path/model.sdf -sdf -model lane_path -x 0 -y 0 -z 0.01"/>
+</launch>
+

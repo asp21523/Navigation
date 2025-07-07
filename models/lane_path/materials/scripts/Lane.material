@@ -1,0 +1,14 @@
+material Lane/RedPath
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture lane.jpeg
+      }
+    }
+  }
+}
+

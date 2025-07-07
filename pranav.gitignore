@@ -1,0 +1,6 @@
+# Ignore build and devel folders
+build/
+devel/
+*.pyc
+*.log
+

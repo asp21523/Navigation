@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="lane_path">
+    <static>true</static>
+    <link name="lane_link">
+      <visual name="lane_visual">
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>5 5</size> <!-- Set based on your image scale -->
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://lane_path/materials/scripts</uri>
+            <uri>model://lane_path/materials/textures</uri>
+            <name>Lane/RedPath</name>
+          </script>
+        </material>
+      </visual>
+      <collision name="lane_collision">
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>5 5</size>
+          </plane>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>
+
